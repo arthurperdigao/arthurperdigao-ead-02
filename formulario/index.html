@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arhur Perdigão</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+  <h3>Formulários de cadastro</h3>
+
+  <form action='index.html' method='GET'>
+      <p>
+          <label for='name'>Digite seu nome:</label>
+          <input autofocus type="text" name='name' id='name'>
+      </p>
+    <p>
+      Digite o seu e-mail:
+      <input required type='email' name='email' id='email' placeholder="Por favor, informe um e-mail válido">
+    </p>
+    <p>
+        Sexo:
+        <input type='radio' checked name='sexo' id='feminino' value='f'>
+        <label for='feminino'>Feminino</label>
+        <input type='radio' name='sexo' id='masculino' value='m'>
+        <label for='masculino'>Masculino</label>
+      </p>
+      <p>
+          <label for='data'>Digite a data de nascimento:</label>
+          <input autofocus type="date" name='data' id='data' placeholder="DD/MM/AAAA" required="true">
+      </p>
+      <p> 
+        <label for="escolaridade">Qual sua Graduação: </label>   
+          <select name="escolaridade" id="escolaridade">
+            <option value="m">Ensino Medio</option>
+            <option value="sup" selected>Superior Completo</option>
+            <option value="PG">Pós-Graduação</option>
+            <option value="mest">Mestrado</option>
+            <option value="dou">Doutorado</option>    
+          </select>
+          </p>
+          <p>
+            <label for="diasSemana">Dias Disponiveis:</label>
+              <select name="diasSemana" id="diasSemana" multiple size='7'> 
+                <option value="d">Domingo</option>
+                <option value="seg">Segunda</option>
+                <option value="t">Terça</option>
+                <option value="qua">Quarta</option>
+                <option value="qui">Quinta</option>
+                <option value="sex" selected>Sexta</option>
+                <option value="sab">Sábado</option>
+              
+              </select>
+              </p>
+          <p>
+              <label for='usuario'>Nome de Usuario:</label>
+              <input autofocus type="text" name='usuario' id='usuario'>
+          </p>
+    <p>      
+      <label for='senha'>Digite a sua senha:</label>
+      <input autofocus type='password' name='senha' id='senha'>
+    </p>
+    <p>
+        <label for='filho'>Quantidade de Filho: </label>
+        <input autofocus type="number" name='filho' id='filho'>
+    </p>
+    <p>
+      <label for="cor">Digite sua cor Preferida: </label>
+        <input required type='color' name='cor' id='cor'>
+      </p>
+      <p>
+        <label for="car">Quantidade de Veiculos: </label>
+        0<input autofocus type="range" max="5" name="car" id"car">5
+      </p>
+   <label for="textao">Comentarios sobre o site :</label>
+    <textarea name="textao" id="textao" cols="30" rows="10">Digite aquilo nesse espaço
+    </textarea>
+    <p>
+        <input type='checkbox' checked name='novidades' id='novidades'>
+        <label for='novidades'>
+          Deseja receber novidades?
+        </label>
+    </p>
+    <input type='submit' value='Enviar'>
+    <input type='reset' value='Recomeçar'>
+    <input type='hidden' name='id' id='id' value='234343'>
+
+  </form>
+
+</body>
+
+</html>
